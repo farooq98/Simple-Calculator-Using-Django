@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mathematical Operations</h1>
+        <form method="post" action="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+    <h2>{{ text }}</h2>
+</body>
+</html>
